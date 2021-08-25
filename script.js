@@ -12,7 +12,7 @@ function media(n1, n2, n3, n4){
 
 function passou(media){
     
-    if(media > 5){
+    if(media >= 5){
         return "Passou";
 
     }
@@ -22,22 +22,22 @@ function passou(media){
 
 }
 
-for (var i = 0; i < alunos.length; i++){
-    //var alunos = alunos[i];
-    //var tec = tec[i];
-    //var fin = fin[i];
-    //var org = org[i];
-    //var game = game[i];
-    var m = (tec[i] + fin[i] + org[i] + game[i]) /4;
-    console.log(alunos[i] +
+for (var i in alunos){
+    var n = alunos[i];
+    var tec = tec[i];
+    var fin = fin[i];
+    var org = org[i];
+    var game = game[i];
+    var m = media(tec, fin, org, game);
+    console.log(n] +
         " - " +
-        tec[i] +
+        tec +
         " - " +
-        fin[i] +
+        fin +
         " - " +
-        org[i] +
+        org +
         " - " +
-        game[i] +
+        game +
         " - " +
         m +
         " - " +
