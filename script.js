@@ -6,7 +6,7 @@ var game = [1.0, 5.0, 6.0, 7.0];
 
 function media(n1, n2, n3, n4){
 
-    return (n1 + n2 + n3 + n4) /2;
+    return (n1 + n2 + n3 + n4) /4;
 
 }
 
@@ -24,20 +24,20 @@ function passou(media){
 
 for (var i in alunos){
     var n = alunos[i];
-    var tec = tec[i];
-    var fin = fin[i];
-    var org = org[i];
-    var game = game[i];
-    var m = media(tec, fin, org, game);
-    console.log(n] +
+    var tc = tec[i];
+    var fn = fin[i];
+    var or = org[i];
+    var gm = game[i];
+    var m = media(tc, fn, or, gm);
+    console.log(n +
         " - " +
-        tec +
+        tc +
         " - " +
-        fin +
+        fn +
         " - " +
-        org +
+        or +
         " - " +
-        game +
+        gm +
         " - " +
         m +
         " - " +
